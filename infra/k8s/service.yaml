@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo3-coll-e87bd2c26c0d4e8484af12cb79cc059c-srv
+spec:
+  selector:
+    app: demo3-coll-e87bd2c26c0d4e8484af12cb79cc059c
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9068
+  type: ClusterIP
